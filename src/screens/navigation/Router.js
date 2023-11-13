@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Home, Riwayat, Profile } from '../screens';
+import { Home, Pesanan, Promo } from '../screens';
 import { Home2,ProfileCircle, Receipt, Receipt1 } from 'iconsax-react-native';
 import { fontType, colors } from '../theme';
 
@@ -41,10 +41,10 @@ function MainApp() {
         }}
       />
       <Tab.Screen
-        name="Riwayat"
-        component={Riwayat}
+        name="Pesanan"
+        component={Pesanan}
         options={{
-          tabBarLabel: 'Riwayat',
+          tabBarLabel: 'Pesanan',
           tabBarIcon: ({ focused, color }) => (
             <Receipt1
               color={color}
